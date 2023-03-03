@@ -22,3 +22,5 @@ let myCurrentJob = "Teacher";
 
 let job1 = "programmer";
 let job2 = "teacher";
+
+let javaScriptFuna = true;
