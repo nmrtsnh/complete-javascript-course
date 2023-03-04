@@ -91,19 +91,31 @@ if (markBMI > johnBMI) {
 //   console.log("Match is draw");
 // }
 
-const avgScoreDolphins = (97 + 112 + 80) / 3;
+// const avgScoreDolphins = (97 + 112 + 80) / 3;
 
-const avgScoreKoalas = (109, 95, 106) / 3;
+// const avgScoreKoalas = (109, 95, 106) / 3;
 
-let minScore = 100;
-if (avgScoreDolphins > avgScoreKoalas && avgScoreDolphins >= minScore) {
-  console.log("Dolphins wins");
-} else if (avgScoreKoalas > avgScoreDolphins && avgScoreKoalas >= minScore) {
-  console.log("Koalas wins");
-} else if (
-  avgScoreDolphins === avgScoreKoalas &&
-  avgScoreDolphins >= minScore &&
-  avgScoreKoalas >= minScore
-) {
-  console.log("both wins trophy");
-} else console.log("no one wins the trophy");
+// let minScore = 100;
+// if (avgScoreDolphins > avgScoreKoalas && avgScoreDolphins >= minScore) {
+//   console.log("Dolphins wins");
+// } else if (avgScoreKoalas > avgScoreDolphins && avgScoreKoalas >= minScore) {
+//   console.log("Koalas wins");
+// } else if (
+//   avgScoreDolphins === avgScoreKoalas &&
+//   avgScoreDolphins >= minScore &&
+//   avgScoreKoalas >= minScore
+// ) {
+//   console.log("both wins trophy");
+// } else console.log("no one wins the trophy");
+
+// Coding Challenge 4
+
+const bill = 275;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const total = bill + tip;
+
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${total}`
+);
