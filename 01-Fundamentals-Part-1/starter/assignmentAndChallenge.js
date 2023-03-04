@@ -61,3 +61,49 @@ if (markBMI > johnBMI) {
 }
 
 */
+
+//Coding Challenge 3
+
+// const avgScoreDolphins = (96 + 108 + 89) / 3;
+// console.log(avgScoreDolphins);
+
+// const avgScoreKoalas = (88, 91, 110) / 3;
+
+// if (avgScoreDolphins > avgScoreKoalas) {
+//   console.log("Dolphins wins");
+// } else if (avgScoreKoalas > avgScoreDolphins) {
+//   console.log("Koalas wins");
+// } else if (avgScoreDolphins === avgScoreKoalas){
+//   console.log("Match is draw");
+// }
+
+// const avgScoreDolphins = (97 + 112 + 101) / 3;
+
+// const avgScoreKoalas = (109, 95, 123) / 3;
+
+// let minScore = 100;
+
+// if (avgScoreDolphins > avgScoreKoalas && avgScoreDolphins >= minScore) {
+//   console.log("Dolphins wins");
+// } else if (avgScoreKoalas > avgScoreDolphins && avgScoreKoalas >= minScore) {
+//   console.log("Koalas wins");
+// } else if (avgScoreDolphins === avgScoreKoalas) {
+//   console.log("Match is draw");
+// }
+
+const avgScoreDolphins = (97 + 112 + 80) / 3;
+
+const avgScoreKoalas = (109, 95, 106) / 3;
+
+let minScore = 100;
+if (avgScoreDolphins > avgScoreKoalas && avgScoreDolphins >= minScore) {
+  console.log("Dolphins wins");
+} else if (avgScoreKoalas > avgScoreDolphins && avgScoreKoalas >= minScore) {
+  console.log("Koalas wins");
+} else if (
+  avgScoreDolphins === avgScoreKoalas &&
+  avgScoreDolphins >= minScore &&
+  avgScoreKoalas >= minScore
+) {
+  console.log("both wins trophy");
+} else console.log("no one wins the trophy");
