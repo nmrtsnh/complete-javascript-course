@@ -4,7 +4,7 @@
 const score0 = document.getElementById('score--0');
 const score1 = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
-const current1El = documment.getElementById('current--1');
+const current1El = document.getElementById('current--1');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
