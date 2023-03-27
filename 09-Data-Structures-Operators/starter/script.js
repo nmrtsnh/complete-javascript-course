@@ -26,4 +26,61 @@ const restaurant = {
       close: 24,
     },
   },
+  order(starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered at ${time} to ${address}`
+    );
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your pasta with ${ing1}, ${ing2}, and ${ing3}`);
+  },
+
+  orderPizza: function (mainIng, ...otherIng) {
+    console.log(mainIng);
+    console.log(otherIng);
+  },
 };
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) console.log(item);
+
+for (const item of menu.entries()) {
+  console.log(item);
+}
+
+// restaurant.orderPizza('mushroom', 'olive', 'chicken', 'spinach');
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via del Sole,21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
+
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1"),
+//   prompt('Ingredient2'),
+//   prompt('Ingredient3'),
+// ];
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
+
+/*
+console.log(restaurant.order(2, 0));
+
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+*/
+
+// const mainMenuCopy = [...restaurant.mainMenu];
+
+// const menu = [...mainMenu, ...restaurant.starterMenu];
+
+// console.log(menu);
